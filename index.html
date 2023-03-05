@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function wasclick(){
+        document.getElementById('show').style.display = "block"
+    }
+</script>
+<style>
+    button{
+        padding: 20px;
+        font-size: 20px;
+       background-color: aqua;
+       font-family: Verdana, Tahoma, sans-serif;
+        
+    }
+    button:active{
+        background-color: red;
+    }
+    .cont{
+        display: flex;
+        justify-content: center;
+        
+    }
+    #show{
+        display: none;
+        background-color: red;
+        text-align: center;
+        font-size: 60px;
+        
+    }
+   
+</style>
+<body>
+    <div class="cont">
+        <button type="button" onclick="wasclick()">CLICK MOKO</button>
+    </div>
+    <p id="show">BOBO KA</p>
+</body>
+</html>
